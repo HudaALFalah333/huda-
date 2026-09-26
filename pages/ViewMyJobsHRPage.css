@@ -1,0 +1,370 @@
+.view-my-jobs-hr-page {
+  min-height: 100vh;
+  background: #f8f9fa;
+}
+
+.view-my-jobs-hr-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+  padding: 16px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.3s ease;
+}
+
+.view-my-jobs-hr-header.scrolled {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.view-my-jobs-hr-header-left {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.view-my-jobs-hr-logo-section {
+  display: flex;
+  align-items: center;
+}
+
+.view-my-jobs-hr-logo-image {
+  height: 40px;
+  width: auto;
+}
+
+.view-my-jobs-hr-header-nav {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.view-my-jobs-hr-nav-link {
+  color: #475569;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.view-my-jobs-hr-nav-link:hover {
+  color: #080066;
+}
+
+.view-my-jobs-hr-nav-link.active {
+  color: #080066;
+}
+
+.view-my-jobs-hr-header-center {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.view-my-jobs-hr-search-container {
+  position: relative;
+  width: 100%;
+  max-width: 350px;
+}
+
+.view-my-jobs-hr-search-input {
+  width: 100%;
+  padding: 10px 16px 10px 44px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #1f2937;
+  font-size: 14px;
+}
+
+.view-my-jobs-hr-search-input::placeholder {
+  color: #9ca3af;
+}
+
+.view-my-jobs-hr-search-button {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: #6b7280;
+  cursor: pointer;
+}
+
+.view-my-jobs-hr-header-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.view-my-jobs-hr-user-profile {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  position: relative;
+}
+
+.view-my-jobs-hr-profile-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #e5e7eb;
+}
+
+.view-my-jobs-hr-profile-name {
+  color: #1f2937;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.view-my-jobs-hr-profile-dropdown {
+  background: none;
+  border: none;
+  color: #6b7280;
+  cursor: pointer;
+}
+
+.view-my-jobs-hr-profile-dropdown-menu {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  min-width: 180px;
+  z-index: 1000;
+}
+
+.view-my-jobs-hr-dropdown-item {
+  width: 100%;
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: none;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  color: #1f2937;
+  font-size: 14px;
+  transition: background 0.2s;
+}
+
+.view-my-jobs-hr-dropdown-item:hover {
+  background: #f3f4f6;
+}
+
+.view-my-jobs-hr-content {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.view-my-jobs-hr-container {
+  background: white;
+  border-radius: 12px;
+  padding: 40px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.view-my-jobs-hr-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 8px;
+}
+
+.view-my-jobs-hr-subtitle {
+  font-size: 16px;
+  color: #6b7280;
+  margin-bottom: 32px;
+}
+
+.view-my-jobs-hr-jobs-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.view-my-jobs-hr-job-card {
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 24px;
+  transition: all 0.2s;
+}
+
+.view-my-jobs-hr-job-card:hover {
+  border-color: #080066;
+  box-shadow: 0 4px 12px rgba(8, 0, 102, 0.1);
+}
+
+.view-my-jobs-hr-job-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 16px;
+}
+
+.view-my-jobs-hr-job-title-section {
+  flex: 1;
+}
+
+.view-my-jobs-hr-job-title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 8px;
+}
+
+.view-my-jobs-hr-job-meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.view-my-jobs-hr-job-company {
+  font-weight: 500;
+  color: #080066;
+}
+
+.view-my-jobs-hr-job-separator {
+  color: #d1d5db;
+}
+
+.view-my-jobs-hr-job-department,
+.view-my-jobs-hr-job-location {
+  color: #6b7280;
+}
+
+.view-my-jobs-hr-job-status {
+  display: flex;
+  align-items: center;
+}
+
+.view-my-jobs-hr-status-badge {
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.view-my-jobs-hr-status-badge.active {
+  background: #d1fae5;
+  color: #065f46;
+}
+
+.view-my-jobs-hr-status-badge.inactive {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.view-my-jobs-hr-job-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-bottom: 16px;
+}
+
+.view-my-jobs-hr-job-detail {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #475569;
+  font-size: 14px;
+}
+
+.view-my-jobs-hr-job-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.view-my-jobs-hr-skill-tag {
+  padding: 6px 12px;
+  background: #f3f4f6;
+  color: #1f2937;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.view-my-jobs-hr-job-footer {
+  display: flex;
+  gap: 12px;
+  padding-top: 16px;
+  border-top: 1px solid #e5e7eb;
+}
+
+.view-my-jobs-hr-view-button,
+.view-my-jobs-hr-applicants-button {
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  border: none;
+}
+
+.view-my-jobs-hr-view-button {
+  background: #080066;
+  color: white;
+}
+
+.view-my-jobs-hr-view-button:hover {
+  background: #06004d;
+}
+
+.view-my-jobs-hr-applicants-button {
+  background: #f3f4f6;
+  color: #1f2937;
+}
+
+.view-my-jobs-hr-applicants-button:hover {
+  background: #e5e7eb;
+}
+
+@media (max-width: 768px) {
+  .view-my-jobs-hr-header {
+    padding: 12px 20px;
+    flex-wrap: wrap;
+  }
+
+  .view-my-jobs-hr-header-nav {
+    display: none;
+  }
+
+  .view-my-jobs-hr-content {
+    padding: 20px 16px;
+  }
+
+  .view-my-jobs-hr-container {
+    padding: 24px;
+  }
+
+  .view-my-jobs-hr-title {
+    font-size: 24px;
+  }
+
+  .view-my-jobs-hr-job-header {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .view-my-jobs-hr-job-footer {
+    flex-direction: column;
+  }
+}

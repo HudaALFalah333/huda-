@@ -1,0 +1,33 @@
+{
+  "name": "ejo-support-backend",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "main": "src/server.js",
+  "scripts": {
+    "dev": "nodemon src/server.js",
+    "start": "node src/server.js",
+    "test:db": "node scripts/test-db.js",
+    "test:db:smoke": "node scripts/test-db-smoke.js",
+    "test:api:auth": "node scripts/test-api-auth.js",
+    "test:api:jobs": "node scripts/test-api-jobs.js",
+    "test:api:applications": "node scripts/test-api-applications.js",
+    "test:api:interviews": "node scripts/test-api-interviews.js",
+    "test:api:notifications": "node scripts/test-api-notifications.js",
+    "seed:hr-user": "node scripts/seed-hr-user.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "nodemailer": "^7.0.12",
+    "pg": "^8.12.0",
+    "twilio": "^5.4.5",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}
